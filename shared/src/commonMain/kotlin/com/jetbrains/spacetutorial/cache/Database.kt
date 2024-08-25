@@ -1,6 +1,9 @@
 package com.jetbrains.spacetutorial.cache
 
-// This class's visibility is set to internal, which means it is only accessible from within the multiplatform module.
+import com.jetbrains.spacetutorial.entity.Links
+import com.jetbrains.spacetutorial.entity.Patch
+import com.jetbrains.spacetutorial.entity.RocketLaunch
+
 internal class Database(databaseDriverFactory: DatabaseDriverFactory) {
     private val database = AppDatabase(databaseDriverFactory.createDriver())
     private val dbQuery = database.appDatabaseQueries
